@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import Battle from './components/Battle'
-import Equipment from './components/Equipment'
+import Play from './components/Play'
 import './App.css'
 //https://www.w3schools.com/html/html5_draganddrop.asp
 
@@ -9,7 +8,7 @@ function App() {
 
   return (
     <>
-    <Battle />
+      <Play />
     </>
   )
 }
