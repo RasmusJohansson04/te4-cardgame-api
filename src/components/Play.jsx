@@ -49,9 +49,13 @@ function Play() {
   else {
     return (
       <>
-        <p>{pokemons[0].name}</p>
-        <p>{pokemons[1].name}</p>
-        <p>{pokemons[2].name}</p>
+        <h1>Pick a Starter</h1>
+        {pokemons.map((pokemon, index) =>
+          <button key={index}>
+            <p key={index}>{pokemon.name}</p>
+            <img src={pokemon.sprite.front_default} alt="" />
+          </button>
+        )}
       </>
     )
   }
